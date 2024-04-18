@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;background-color: #FFEFD5;
+	}
+.swiper {
+	height: 550px; /* スライダーの高さを指定 */
+}
+.swiper-container {
+	width: 80%;
+	margin: 0 auto;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiperContainer {
+	position: relative;
+  }
+.swiper-scrollbar {
+	height: 7px !important;
+	bottom: -12px !important;
+	left: 50% !important;
+	transform: translateX(-50%);
+  }
+h1 {
+	font-weight: 500; /* 通常よりも少し太い */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 2.2em; /* 文字サイズを大きく */
+    margin-top: 20px; /* 上からのマージンを追加 */
+}
+ 
+summary {
+	list-style: none;/* ▼消す */
+    cursor: pointer;/* ポインターに変える */
+    font-size: 2em; /* 文字サイズを大きく */
+	background-color: #FFC7AF;
+	height: 60px;
+	line-height:60px;
+}
+.answer {
+	overflow: hidden;
+}
+
+  .list {
+	display: grid;
+	row-gap: 20px;
+	padding: 10px;
+  }
+	/* ここまで調整用スタイル */
+  .details {
+	margin-top: 1px; /* 上からのマージンを追加 */
+	width: 80%;
+	margin-left: auto; /* 左端を画面の中央に配置 */
+    margin-right: auto; /* 右端を画面の中央に配置 */
+  }
+	  
+  .answerInner {
+	padding: 5px 0px 10px;
+	font-size: 1em; /* 文字サイズを大きく */
+  }
+
+  h2 {
+	font-weight: 500; /* 通常よりも少し太い */
+    font-size: 2.2em; /* 文字サイズを大きく */
+    margin-top: 80px; /* 上からのマージンを追加 */
+	margin-bottom: 20px;/* 下からのマージンを追加 */
+  }
+ .mt-3{
+    font-size: 1.2em; /* 文字サイズを大きく */
+	margin-left: 30px;
+  }
+
+  .flex .image img {
+	width: 500px;
+	height: auto;
+  }
+
+  #p1 {
+	font-weight: 700;
+	font-size: 1.5em; /* 文字サイズを大きく */
+	margin-left: 15px;
+	margin-top: 25px;
+  }
+  #p2 {
+	font-size: 1em; /* 文字サイズを大きく */
+	margin-left: 10px;
+	margin-top: 20px;
+  }
+  h3 {
+	font-weight: 500; /* 通常よりも少し太い */
+    text-align: center; /* テキストを中央揃え */
+    font-size: 2.2em; /* 文字サイズを大きく */
+    margin-top: 20px; /* 上からのマージンを追加 */
+	margin-bottom: 20px; 
+}
+    
+  .js-fade {
+	  opacity: 0;
+	  visibility: hidden;
+	  transform: translateY(50px);
+	  transition: opacity 1s,visibility 1s, transform 1s;
+  }
+  
+  .scroll {
+	  opacity: 1;
+	  visibility: visible;
+	  transform: translateY(0px);
+  }
+
+  .col-2 {
+    margin-right: 50px; /* 任意の間隔を設定 */
+	margin-bottom: 30px;
+}
+div.restaurant1 {
+	width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-position: 54% 36%;
+  background-image: url("img/restaurant2.jpg");
+  background-size: cover; /* 画像を縮小して要素に合わせる */
+}
+div.restaurant2 {
+	width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-position: 54% 36%;
+  background-image: url("img/restaurant3.jpg");
+  background-size: cover; /* 画像を縮小して要素に合わせる */
+}
+div.restaurant3 {
+	width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-position: 54% 36%;
+  background-image: url("img/restaurant4.jpg");
+  background-size: cover; /* 画像を縮小して要素に合わせる */
+}
+div.restaurant4 {
+	width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-position: 54% 36%;
+  background-image: url("img/restaurant5.jpg");
+  background-size: cover; /* 画像を縮小して要素に合わせる */
+}
+
+footer
+{
+margin-top: 100px;
+}
+  /* タブレット以上の画面サイズに対するスタイル */
+@media (max-width: 768px) {
+	.summary {
+	  font-size: 1.2em;
+	}
+  
+	.answerInner {
+	  font-size: 0.9em;
+	}
+	.container {
+		width: 80%;
+		margin: 0 auto; /* 水平方向に中央揃えするためのマージン */
+		padding: 10px; /* コンテンツとの間隔 */
+  }
+  .mt-3{
+    font-size: 1.2em; /* 文字サイズを大きく */
+	margin-left: 0px;
+  }
+  .hide-on-mobile {
+	display: none;
+  }
+  .details {
+	margin-top: 1px; /* 上からのマージンを追加 */
+	width: 95%;
+	margin-left: auto; /* 左端を画面の中央に配置 */
+    margin-right: auto; /* 右端を画面の中央に配置 */
+  }
+}
