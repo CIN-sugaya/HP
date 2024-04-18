@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/base.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgray;">
+
+        <div class="container-fluid">
+          <a class="navbar-brand font-weight-bold fs-1" href="#" style="font-weight: 700;">Casteria</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Foof</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drink</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">お問合せ</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-light" style="font-weight: 700;">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slider main container -->
+ <div class="swiperContainer">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="img/interior.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/restaurant.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/food.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/food2.jpg" alt="">
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+ </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+                loop: true, // ループ表示
+                autoplay: {
+                delay: 3000, // 自動再生の遅延時間（ミリ秒）
+            },
+            pagination: {
+                el: '.swiper-pagination', // ページネーションを表示する要素
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // 次へボタンを表示する要素
+                prevEl: '.swiper-button-prev', // 前へボタンを表示する要素
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar', // スクロールバーを表示する要素
+            },
+            breakpoints: {
+                // 画面幅が 768px 以上の場合
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+            }
+        });
+    </script>
+
+    <h1>新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
+
+    <div class="container">
+        <details class="details">
+          <summary class="summary">
+                &nbsp;&#x25A0;衛生面に関して</summary>
+          <div class="answer">
+                <div class="answerInner">・マスクを着用しての接客</div>
+                <div class="answerInner">・出勤前の検温の徹底</div>
+                <div class="answerInner">・レジカウンターやドリンク受け渡し口等への飛沫防止ガード設置</div>
+                <div class="answerInner">・より頻度の高い手洗いの励行</div>
+                <div class="answerInner">・テーブルにお客様用アルコールの設置</div>
+                <div class="answerInner">・従業員間の距離確保のため、休憩や研修時の客席利用</div>
+          </div>
+        </details>
+        <details class="details">
+                <summary class="summary">
+                      &nbsp;&#x25A0;お客様へのご協力のお願い</summary>
+                <div class="answer">
+                      <div class="answerInner">・店内では、飲食時以外のマスク着用をお願いいたします</div>
+                      <div class="answerInner">・入店時の手指の消毒にご協力ください</div>
+                      <div class="answerInner">・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</div>
+                      <div class="answerInner">・多数でお越しの際は、お1人がまとめてご注文願います（混雑時に入場規制をする場合がございます）</div>
+                      <div class="answerInner">・発熱や体調不良の際はご入店をお控えください</div>
+                </div>
+              </details>
+        <details class="details">
+                <summary class="summary">
+                      &nbsp;&#x25A0;サービスに関して</summary>
+                <div class="answer">
+                      <div class="answerInner">・直接お渡しする商品の提供、金銭授受時にグローブの着用</div>
+                      <div class="answerInner">・ドリンクやフードのサンプリング中止</div>
+                      <div class="answerInner">・地域活動・イベントの中止</div>
+                      <div class="answerInner">・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</div>
+                      <div class="answerInner">・混雑状況に応じたドライブスルーサービスの一時中止や店内客席利用の制限</div>
+                </div>
+              </details>
+      </div>
+      
+<div class="js-fade">
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-1"> <!-- オフセットを追加して左半分の中央に配置 -->
+            <h2>Signature Food</h2>
+        </div>
+    </div>
+ </div>
+
+
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <img src="img/food.jpg" class="img-fluid" style="width: 100%;" alt="">
+                </div>
+                <div class="col-md-5">
+                    <p class="mt-3">サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンのおいしさを引き立てる２種のソースも絶品です！</p>
+                </div>
+            </div>
+        </div>
+</div>
+ <div class="js-fade"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-1"> <!-- オフセットを追加して左半分の中央に配置 -->
+                    <h2>Our Coffee</h2>
+                </div>
+            </div>
+         </div>
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <img src="img/barista.jpg" class="img-fluid" style="width: 100%;" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <p class="mt-3">当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。</p>
+                        </div>
+                    </div>
+                </div>
+
+ </div>
+ <div class="js-fade"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 offset-md-1"> <!-- オフセットを追加して左半分の中央に配置 -->
+                            <h2>Our Food</h2>
+                        </div>
+                    </div>
+                 </div>
+                        <div class="container text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-5">
+                                    <img src="img/food3.jpg" class="img-fluid" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="mt-3">当店は何よりまずは衛生管理に気を付けています。「安心・安全」をお届けするために日々継続的な努力を惜しみません。</p>
+                                </div>
+                            </div>
+                        </div>
+ </div>
+                        <div class="container text-center js-fade" style="margin-top: 30px;">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-5" style="background-color: black;">
+                                    <font color="white">
+                                        <p id="p1">
+                                            Address
+                                        </p>
+                                        <p id="p2">
+                                            681 xxxx Drive,xxxxx xxxx #01-06 000000
+                                        </p>
+                                        <p id="p2">
+                                            Opening Hours
+                                        </p>
+                                        <p id="p1">
+                                            Mondays-Friday:10am-9pm
+                                        </p>
+                                        <p id="p2">
+                                            Satudays,sundays & Public Holidays:9am-9pm
+                                        </p>
+                                    </font>
+                                </div>
+                                <div id=cf class="col-12 col-md-5 text-md-start" style="background-color: black; padding: 20px;">
+                                    <img src="img/barista.jpg" class="img-fluid" style="width: 100%;" alt="">
+                                </div>
+                            </div>
+                        </div>                      
+                        <div class="js-fade">
+                        <h3 class="container text-center hide-on-mobile">店舗一覧</h3>
+    
+                        <div class="container hide-on-mobile">
+                            <div class="row justify-content-center ">
+                                <div class="col-2 main: 20px;">
+                                    <div class="restaurant1"></div>
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/pin.png" width="15px"></td>
+                                            <td style="white-space: nowrap;">東京都渋谷区xxxxxx xxxxx</td>
+                                        </tr>
+                                    </table>  
+                                </div>
+                                <div class="col-2"> 
+                                    <div class="restaurant2"></div>
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/pin.png" width="15px"></td>
+                                            <td style="white-space: nowrap;">千葉県松戸市xxxxxx xxxxx</td>
+                                        </tr>
+                                    </table>  
+                                </div>
+                                <div class="col-2"> 
+                                    <div class="restaurant3"></div>
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/pin.png" width="15px"></td>
+                                            <td style="white-space: nowrap;">神奈川県横浜市xxxxxx xxxxx</td>
+                                        </tr>
+                                    </table>    
+                                </div>
+                                <div class="col-2"> 
+                                    <div class="restaurant4"></div>
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/pin.png" width="15px"></td>
+                                            <td style="white-space: nowrap;">埼玉県川越市xxxxxx xxxxx</td>
+                                        </tr>
+                                    </table>   
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                    
+
+                      <footer class="container-fluid mt-2" style="background-color:darkgray; margin-top: 10px;">
+                        <div class="row">
+                          <ul class="nav justify-content-center py-5">
+                                <li class="nav-item" >
+                                  <a class="nav-link"style="color: black;" href="#">プライバシーポリシー</a>
+                                </li>
+                                <li class="nav-item">
+                                      <a class="nav-link"style="color: black;" href="https://www.sejuku.net/blog/51809">お問合せ</a>
+                                </li>
+                                <li class="nav-item">
+                                      <a class="nav-link" style="color: black" href="#">運営会社</a>
+                                </li>		 
+                          </ul>
+                        </div>
+                       
+                      </footer>
+  
+                        
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              const animTiming = {
+                duration: 300,
+                easing: "ease-in-out",
+              };
+          
+              const closingAnimation = (answer) => [
+                { height: answer.offsetHeight + "px", opacity: 1 },
+                { height: 0, opacity: 0 },
+              ];
+          
+              const openingAnimation = (answer) => [
+                { height: 0, opacity: 0 },
+                { height: answer.offsetHeight + "px", opacity: 1 },
+              ];
+          
+              document.querySelectorAll(".details").forEach(function (el) {
+                const summary = el.querySelector(".summary");
+                const answer = el.querySelector(".answer");
+                
+                summary.addEventListener("click", (event) => {
+                  event.preventDefault();
+                  
+                  if (el.getAttribute("open") !== null) {
+                    const closingAnim = answer.animate(closingAnimation(answer), animTiming);
+          
+                    closingAnim.onfinish = () => {
+                      el.removeAttribute("open");
+                    };
+                  } else {
+                    el.setAttribute("open", "true");
+                    const openingAnim = answer.animate(openingAnimation(answer), animTiming);
+                  }
+                });
+              });
+            });
+          </script>
+    
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $(window).scroll(function (){
+    $('.js-fade').each(function(){
+      var pos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > pos - windowHeight + 280){
+        $(this).addClass('scroll');
+      }
+    });
+  });
+});
+</script>
+      
+      
+      
+        
+  </body>       
+</html>
